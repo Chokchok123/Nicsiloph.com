@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phones Business</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Buy the latest mobile phones from top brands like Apple, Samsung, Huawei, and Sony.">
+    <meta name="keywords" content="mobile phones, smartphones, Apple, Samsung, Huawei, Sony">
+    <meta name="author" content="Your Business Name">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+</head>
+<body>
+    <header>
+        <h1>Mobile Phones Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our mobile phone store. We offer a wide range of mobile phones from top brands.</p>
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+        <input type="text" id="search" onkeyup="searchProducts()" placeholder="Search for brands or models..">
+
+        <!-- Brand A -->
+        <div class="brand-category" id="brandA">
+            <h3 onclick="toggleCategory('brandA')">Apple</h3>
+            <div class="product-grid" id="brandA-products">
+                <div class="product-item" data-brand="Apple" data-model="Iphone 12">
+                    <a href="link-to-brandA-phone1-details.html"><img src="nics1.png" alt="Iphone 12"></a>
+                    <h4>Iphone 12</h4>
+                    <button onclick="buyProduct('Iphone 12')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Apple" data-model="Ipad 9th gen">
+                    <a href="link-to-brandA-phone2-details.html"><img src="nics2.png" alt="Ipad 9th gen"></a>
+                    <h4>Ipad 9th gen</h4>
+                    <button onclick="buyProduct('Ipad 9th gen')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Apple" data-model="Iphone 13">
+                    <a href="link-to-brandA-phone3-details.html"><img src="nics3.jpg" alt="Iphone 13"></a>
+                    <h4>Iphone 13</h4>
+                    <button onclick="buyProduct('Iphone 13')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Apple" data-model="Iphone X">
+                    <a href="link-to-brandA-phone4-details.html"><img src="nics4.jpeg" alt="Iphone X"></a>
+                    <h4>Iphone X</h4>
+                    <button onclick="buyProduct('Iphone X')">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other brands (Brand B to Brand L) -->
+        <!-- Samsung -->
+        <div class="brand-category" id="brandB">
+            <h3 onclick="toggleCategory('brandB')">Samsung</h3>
+            <div class="product-grid" id="brandB-products">
+                <div class="product-item" data-brand="Samsung" data-model="Samsung Galaxy S21">
+                    <a href="link-to-brandB-phone1-details.html"><img src="brandB_phone1.jpg" alt="Samsung Galaxy S21"></a>
+                    <h4>Samsung Galaxy S21</h4>
+                    <button onclick="buyProduct('Samsung Galaxy S21')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Samsung" data-model="Samsung Galaxy Note 20">
+                    <a href="link-to-brandB-phone2-details.html"><img src="brandB_phone2.jpg" alt="Samsung Galaxy Note 20"></a>
+                    <h4>Samsung Galaxy Note 20</h4>
+                    <button onclick="buyProduct('Samsung Galaxy Note 20')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Samsung" data-model="Samsung Galaxy A52">
+                    <a href="link-to-brandB-phone3-details.html"><img src="brandB_phone3.jpg" alt="Samsung Galaxy A52"></a>
+                    <h4>Samsung Galaxy A52</h4>
+                    <button onclick="buyProduct('Samsung Galaxy A52')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Samsung" data-model="Samsung Galaxy Z Fold3">
+                    <a href="link-to-brandB-phone4-details.html"><img src="brandB_phone4.jpg" alt="Samsung Galaxy Z Fold3"></a>
+                    <h4>Samsung Galaxy Z Fold3</h4>
+                    <button onclick="buyProduct('Samsung Galaxy Z Fold3')">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Huawei -->
+        <div class="brand-category" id="brandC">
+            <h3 onclick="toggleCategory('brandC')">Huawei</h3>
+            <div class="product-grid" id="brandC-products">
+                <div class="product-item" data-brand="Huawei" data-model="Huawei P50">
+                    <a href="link-to-brandC-phone1-details.html"><img src="brandC_phone1.jpg" alt="Huawei P50"></a>
+                    <h4>Huawei P50</h4>
+                    <button onclick="buyProduct('Huawei P50')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Huawei" data-model="Huawei Mate 40">
+                    <a href="link-to-brandC-phone2-details.html"><img src="brandC_phone2.jpg" alt="Huawei Mate 40"></a>
+                    <h4>Huawei Mate 40</h4>
+                    <button onclick="buyProduct('Huawei Mate 40')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Huawei" data-model="Huawei Nova 9">
+                    <a href="link-to-brandC-phone3-details.html"><img src="brandC_phone3.jpg" alt="Huawei Nova 9"></a>
+                    <h4>Huawei Nova 9</h4>
+                    <button onclick="buyProduct('Huawei Nova 9')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Huawei" data-model="Huawei Y9a">
+                    <a href="link-to-brandC-phone4-details.html"><img src="brandC_phone4.jpg" alt="Huawei Y9a"></a>
+                    <h4>Huawei Y9a</h4>
+                    <button onclick="buyProduct('Huawei Y9a')">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sony -->
+        <div class="brand-category" id="brandL">
+            <h3 onclick="toggleCategory('brandL')">Sony</h3>
+            <div class="product-grid" id="brandL-products">
+                <div class="product-item" data-brand="Sony" data-model="Sony Xperia 1 III">
+                    <a href="link-to-brandL-phone1-details.html"><img src="brandL_phone1.jpg" alt="Sony Xperia 1 III"></a>
+                    <h4>Sony Xperia 1 III</h4>
+                    <button onclick="buyProduct('Sony Xperia 1 III')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Sony" data-model="Sony Xperia 5 II">
+                    <a href="link-to-brandL-phone2-details.html"><img src="brandL_phone2.jpg" alt="Sony Xperia 5 II"></a>
+                    <h4>Sony Xperia 5 II</h4>
+                    <button onclick="buyProduct('Sony Xperia 5 II')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Sony" data-model="Sony Xperia 10 II">
+                    <a href="link-to-brandL-phone3-details.html"><img src="brandL_phone3.jpg" alt="Sony Xperia 10 II"></a>
+                    <h4>Sony Xperia 10 II</h4>
+                    <button onclick="buyProduct('Sony Xperia 10 II')">Buy</button>
+                </div>
+                <div class="product-item" data-brand="Sony" data-model="Sony Xperia Pro">
+                    <a href="link-to-brandL-phone4-details.html"><img src="brandL_phone4.jpg" alt="Sony Xperia Pro"></a>
+                    <h4>Sony Xperia Pro</h4>
+                    <button onclick="buyProduct('Sony Xperia Pro')">Buy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us on <a href="https://www.facebook.com/profile.php?id=100064245035412&mibextid=ZbWKwL" target="_blank">Facebook</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mobile Phones Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
